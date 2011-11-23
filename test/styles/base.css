@@ -1,0 +1,22 @@
+body{
+	font-family: Helvetica;
+	font-size: 15px;
+}
+li{
+	list-style: none;
+	padding: 5px;
+}
+#main{
+	border: solid 1px black;
+	padding: 10px;
+	margin: 50px auto;
+	width: 500px;	
+}
+.my-wrapper{
+	border: solid 2px #999;
+	background-color: #C3E4ED;
+	display: none;
+	font: 11px Verdana;
+	padding: 3px;
+	position: absolute;	
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Tool Tips</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Christopher Lepore">
+	<link href="styles/base.css" rel="stylesheet" type="text/css">
+	<!-- Date: 2011-04-01 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="../toolTip.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('.with-wrapper').toolTips({					
+				toolTipWrapper: '.my-wrapper'			
+			});
+			$('.without-wrapper').toolTips({
+				toolTipWrapperClass: 'my-wrapper'
+			});			
+		});
+	</script>
+</head>
+<body>
+	<div id='main'>
+		<div class='my-wrapper'></div>
+		<ul>
+			<li>
+				<a href='#' class='with-wrapper' title="Tool tip number one" alt='A link'>This is a link with a wrapper in the markup</a>
+			</li>
+			<li>
+				<a href='#' class='without-wrapper' title="This is the second tool tip" alt='A link'>This is a link without a wrapper in the markup</a>			
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
